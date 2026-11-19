@@ -1,0 +1,270 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#fff8ef;
+color:#222;
+}
+
+header{
+position:fixed;
+top:0;
+width:100%;
+background:#fff;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
+z-index:1000;
+}
+
+nav{
+max-width:1200px;
+margin:auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px;
+}
+
+.logo{
+font-size:24px;
+font-weight:700;
+color:#d62828;
+}
+
+nav ul{
+display:flex;
+gap:25px;
+list-style:none;
+}
+
+nav a{
+text-decoration:none;
+color:#222;
+font-weight:600;
+}
+
+.hero{
+height:100vh;
+background:linear-gradient(135deg,#d62828,#ff5a5a);
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+color:#fff;
+}
+
+.badge{
+background:#fff;
+color:#d62828;
+padding:8px 20px;
+border-radius:30px;
+font-weight:600;
+}
+
+.hero h1{
+font-size:60px;
+margin-top:20px;
+}
+
+.hero h1 span{
+display:block;
+color:#ffd700;
+}
+
+.hero p{
+margin-top:20px;
+font-size:18px;
+max-width:700px;
+}
+
+.hero-btn{
+margin-top:30px;
+display:flex;
+justify-content:center;
+gap:15px;
+}
+
+.btn-primary,
+.btn-secondary{
+padding:14px 30px;
+border-radius:50px;
+text-decoration:none;
+font-weight:700;
+}
+
+.btn-primary{
+background:#ffd700;
+color:#222;
+}
+
+.btn-secondary{
+border:2px solid #fff;
+color:#fff;
+}
+
+.about,
+.menu,
+.gallery,
+.testimoni{
+padding:100px 20px;
+}
+
+h2{
+text-align:center;
+margin-bottom:50px;
+font-size:40px;
+}
+
+.features,
+.menu-grid,
+.testi-grid{
+max-width:1200px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card,
+.menu-card,
+.testi{
+background:#fff;
+padding:30px;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.card:hover,
+.menu-card:hover{
+transform:translateY(-10px);
+}
+
+.menu-card span{
+display:block;
+margin-top:15px;
+font-size:22px;
+font-weight:700;
+color:#d62828;
+}
+
+.gallery-grid{
+max-width:1200px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+}
+
+.gallery-item{
+height:350px;
+overflow:hidden;
+border-radius:20px;
+position:relative;
+}
+
+.gallery-item img{
+width:100%;
+height:100%;
+object-fit:cover;
+transition:.5s;
+}
+
+.gallery-item:hover img{
+transform:scale(1.1);
+}
+
+.gallery-item::after{
+content:"🍙 Kokoronigiri";
+position:absolute;
+bottom:0;
+left:0;
+width:100%;
+padding:15px;
+background:linear-gradient(to top,rgba(0,0,0,.8),transparent);
+color:#fff;
+font-weight:600;
+}
+
+.promo{
+background:#d62828;
+padding:80px 20px;
+text-align:center;
+color:#fff;
+}
+
+.promo p{
+font-size:50px;
+font-weight:800;
+margin:20px 0;
+}
+
+.promo a{
+background:#ffd700;
+padding:15px 30px;
+border-radius:50px;
+text-decoration:none;
+color:#000;
+font-weight:700;
+}
+
+.cta{
+padding:100px 20px;
+background:#222;
+text-align:center;
+color:#fff;
+}
+
+.cta a{
+display:inline-block;
+margin-top:20px;
+background:#25d366;
+padding:15px 35px;
+border-radius:50px;
+color:#fff;
+text-decoration:none;
+font-weight:700;
+}
+
+.wa-btn{
+position:fixed;
+bottom:20px;
+right:20px;
+width:65px;
+height:65px;
+background:#25d366;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:28px;
+text-decoration:none;
+}
+
+.fade{
+opacity:0;
+transform:translateY(50px);
+transition:1s;
+}
+
+.show{
+opacity:1;
+transform:translateY(0);
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:42px;
+}
+
+nav ul{
+display:none;
+}
+
+}
